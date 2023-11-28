@@ -39,7 +39,11 @@ const todos = (state = initialState, action) => {
       }); // filter TODO: 여기 작성
 
     case "SWITCH_TODO":
-      return; // map.filter TODO: 여기 작성
+      return state
+        .filter(function (item) {
+          return;
+        })
+        .map(); // map.filter TODO: 여기 작성
 
     default:
       return state;

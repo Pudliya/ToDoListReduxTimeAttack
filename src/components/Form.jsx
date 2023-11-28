@@ -29,8 +29,7 @@ function Form() {
             title,
             body,
             isDone: false,
-          }
-        
+          }   
         setTitle('');
         setBody('');
         dispatch(addTodo(newTodo));
@@ -41,7 +40,7 @@ function Form() {
         <label>제목</label>
         <input type="text" value={title} onChange={onChangeTitleHandler}/>
         <label >내용</label>
-        <input type="text" value={body} onChange={onChangebodyHandler} />
+        <input type="text" value={body} onChange={onChangebodyHandler}/>
         <button type="submit">추가</button>
     </form>
   )
